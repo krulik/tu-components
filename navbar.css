@@ -1,0 +1,82 @@
+html, body{
+  margin: 0;
+  width: 100%
+}
+
+.Nav{
+  border: none;
+  background-color: hsl(0, 0%, 90%);
+  height: 50px;
+  width: inherit;
+  padding-top: 11px;
+  margin: 0;
+}
+
+.NavbarBar{
+  float: left;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.NavbarList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.NavItem{
+  float: left;
+  padding: 4px 10px;
+  font-size: 22px;
+}
+
+.NavLink:hover,
+.NavLink,
+.NavLinkHome,
+.NavbarBar
+{
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+
+.NavLink{
+  color: hsl(0, 0%, 55%);
+}
+
+.Form{
+  float: right;
+}
+
+.FormControl{
+  border-style:solid;
+  color: hsl(0, 0%, 67%);
+  border-radius: 6px;
+  line-height: 25px;
+}
+
+.FormControl:focus{
+  outline: none;
+  border-style:solid;
+  color: hsl(190, 100%, 40%);
+  border-radius: 6px;
+}
+
+.Button {
+    background-color: white;
+    color: hsl(122, 81%, 37%);
+    border: 2px solid hsl(122, 81%, 37%); /* Green */
+    border-radius: 4px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.Button:hover {
+    background-color:  hsl(122, 81%, 37%);
+    color: hsl(360, 100%, 100%);
+    border: 2px solid hsl(122, 81%, 37%); /* Green */
+    border-radius: 4px;
+    cursor:pointer;
+}
