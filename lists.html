@@ -1,81 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Lists</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="lists.css">
-</head>
-<body>
-<ul class="MyList">
-  <li>
-    <span class="item-title" title="Name">Name</span>
-    <div class="item-content">
-      <span class="item-desc">description lslslsl</span>
-      <div class="item-footer"> small footer</div>
-      <button class="item-button">Click</button>
-    </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name dkdkkdffh fdghsjfk fkhgfj">Name dkdkkdffh fdghsjfk fkhgfj</span>
-    <div class="item-content">
-    <span class="item-desc">description edyufagaey sadfgadsf aetryea dshfayre aewytry3gda dfhsakehf fffjfjfj lslslsl aetryea dshfayre aewytry3gda dfhsakehf fffjfjfj </span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name aaaa">Name aaaa</span>
-    <div class="item-content">
-    <span class="item-desc">description lslslsl jkjkkkskssk</span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name cvcvcvcv">Name cvcvcvcv</span>
-    <div class="item-content">
-    <span class="item-desc">description fgfssjjsj</span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-</ul>
 
-<ul class="MyList--cards">
-  <li>
-    <span class="item-title" title="Name">Name</span>
-    <div class="item-content">
-      <span class="item-desc">description lslslsl</span>
-      <div class="item-footer"> small footer</div>
-      <button class="item-button">Click</button>
+<html>
+<style>
+
+
+  .card-group {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px;
+
+  }
+
+  .card {
+    border-style: groove;
+    border-radius: 10px;
+    background-color: hsl(210, 17%, 90%);
+    margin-right: 5px;
+  }
+
+  .card-group .card {
+      float: left;
+      border-style: groove;
+      height: 500px;
+  }
+
+  .card,
+  .card-img-top {
+    width: 255px;
+
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+
+.card-list {
+  width: 100%;
+}
+  .card-list .card {
+      float: left;
+      height: 400px;
+      width: inherit;
+      margin-bottom: 5px;
+  }
+
+  .card-list .card .card-img-top,
+  .card-list .card .card-block  {
+          display: inline-block;
+  }
+
+  button {
+    width: 120px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: hsl(210, 40%, 80%);
+    color: white;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .card-group .card-block .card-text {
+      max-height: 180px;
+      height: 1805px;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      overflow-y: scroll;
+
+  }
+
+  .card-list .card-block .card-text {
+      height: 150px;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      overflow-y: scroll;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+
+  }
+
+  .card-list .card .card-block {
+    width: 69%;
+  }
+
+  .card-list .card .card-img-top {
+    width: 29%;
+  }
+
+  .card-list .card .card-text {
+
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+
+</style>
+  <body>
+
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="http://www.madore.org/~david/images/cards/english/king-clubs.png" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" data-src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" data-src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
     </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name dkdkkdffh fdghsjfk fkhgfj">Name dkdkkdffh fdghsjfk fkhgfj</span>
-    <div class="item-content">
-    <span class="item-desc">description edyufagaey sadfgadsf aetryea dshfayre aewytry3gda dfhsakehf fffjfjfj lslslsl aetryea dshfayre aewytry3gda dfhsakehf fffjfjfj </span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name aaaa">Name aaaa</span>
-    <div class="item-content">
-    <span class="item-desc">description lslslsl jkjkkkskssk</span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-  <li>
-    <span class="item-title" title="Name cvcvcvcv">Name cvcvcvcv</span>
-    <div class="item-content">
-    <span class="item-desc">description fgfssjjsj</span>
-    <div class="item-footer"> small footer</div>
-    <button class="item-button">Click</button>
-  </div>
-  </li>
-</ul>
-</body>
+
+    <div class="card-list">
+      <div class="card">
+        <img class="card-img-top" data-src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" data-src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" data-src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <button type="button" class="primary" title="Primary">Read More</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
 </html>
