@@ -1,10 +1,9 @@
 html, body{
   height: 100%;
-  padding-top: 0;
+  padding-top: 0px;
   }
-.Modal-background{
-  background-color: gray;
-  height: 100%;
+.Modal-dialog{
+  display: none;
 }
 .Modal{
   background-color: hsl(0, 0%, 100%);
@@ -15,45 +14,53 @@ html, body{
   min-width: 40%;
   transform: translateX(-50%);
   word-wrap: break-word;
-  display: none;
+  opacity: 1;
   }
-  .Modal:target {
+  .Modal-dialog:target {
     display: block;
   }
+.Modal-background{
+    background-color: hsl(0, 0%, 66%);
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
 .Modal-header{
   border-bottom-style: inset;
   border-bottom-width: thin;
   border-color: hsl(0, 0%, 66%);
   width: 100%;
-  height: 40;
+  height: 40px;
 }
 .Modal-title{
   float: left;
-  padding-left: 10;
-  padding-top: 5;
-  font-size: 20;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 20px;
 }
 .Modal-close{
   float: right;
-  padding-right: 10;
-  padding-top: 10;
+  padding-right: 10px;
+  padding-top: 10px;
 }
-a:link {
+.Modal-close a {
     text-decoration: none;
 }
 .Modal-main{
-  padding-left: 5;
-  padding-top: 10;
-  padding-bottom: 10;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .Modal-footer{
   border-top-style: inset;
   border-top-width: thin;
   border-color: hsl(0, 0%, 66%);
-  height: 40;
+  height: 40px;
 }
 .Modal-buttons{
   float: right;
-  padding-right: 10;
-  padding-top: 10;
+  padding-right: 10px;
+  padding-top: 10px;
 }
