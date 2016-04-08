@@ -57,10 +57,14 @@ html, body{
   border-top-style: inset;
   border-top-width: thin;
   border-color: hsl(0, 0%, 66%);
-  height: 40px;
 }
 .Modal-buttons{
   float: right;
   padding-right: 10px;
   padding-top: 10px;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
