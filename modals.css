@@ -59,6 +59,7 @@ html, body{
   border-color: hsl(0, 0%, 66%);
 }
 .Modal-buttons{
+  display: inline;
   float: right;
   padding-right: 10px;
   padding-top: 10px;

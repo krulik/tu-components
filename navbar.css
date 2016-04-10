@@ -12,11 +12,10 @@
   list-style-type: none;
   width: 100%;
   text-align: center;
-  background-color: yellow;
-  margin: 0px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-padding-start: 0px;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
 }
 .Navbar-brand-dropdown {
   color: hsl(0,0%,0%);
@@ -32,7 +31,7 @@
   background-color: hsl(0, 0%, 60%);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin: 0px;
+  margin: 0;
   display: inline-flex;
 }
 .Navbar-brand{
@@ -62,7 +61,7 @@
 .Navbar-contact{
   background-color: hsl(0, 0%, 83%);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 550px) {
 .Navbar-brand-overlaying{
     display: none;
   }
@@ -74,7 +73,6 @@
     display: inline-flex;
     width: 100%;
     text-align: center;
-    background-color: yellow;
     margin: 0px;
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
