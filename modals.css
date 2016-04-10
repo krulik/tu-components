@@ -1,6 +1,7 @@
 html, body{
   height: 100%;
-  padding-top: 0px;
+  padding: 0px;
+  background-color: hsl(0, 0%, 66%);
   }
 .Modal-dialog{
   display: none;
@@ -8,13 +9,14 @@ html, body{
 .Modal{
   background-color: hsl(0, 0%, 100%);
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   max-width: 80%;
   min-width: 40%;
   transform: translateX(-50%);
   word-wrap: break-word;
   opacity: 1;
+  border-radius: 5px ;
   }
   .Modal-dialog:target {
     display: block;
@@ -54,18 +56,14 @@ html, body{
   padding-bottom: 10px;
 }
 .Modal-footer{
+  white-space: nowrap;
+  text-align: right;
   border-top-style: inset;
   border-top-width: thin;
   border-color: hsl(0, 0%, 66%);
+  padding: 10px;
 }
 .Modal-buttons{
+  white-space: nowrap;
   display: inline;
-  float: right;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
 }
