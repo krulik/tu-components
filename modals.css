@@ -63,7 +63,3 @@ html, body{
   border-color: hsl(0, 0%, 66%);
   padding: 10px;
 }
-.Modal-buttons{
-  white-space: nowrap;
-  display: inline;
-}
